@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    /* border: 2px solid red; */
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0, 0.5)) , url('../images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+/* /////////////////////////////////////Navbar Styling////////////////////////////////////////// */
+.center{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    /* border: 1px solid rebeccapurple; */
+    padding: 2rem;
+}
+nav h1{
+    float: left;
+    color: aliceblue;
+    font-size:5rem ;
+    /* margin-left: 40rem; */
+    cursor:pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+nav ul{
+float: right;
+/* margin-right: 40rem; */
+}
+nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+   
+    
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+}
+
+ul li a:hover{
+    border-bottom: 1px solid aliceblue;
+}
+.clearfix{
+    clear: both;
+}
+/* /////////////////////////////////////////////////// header content //////////////////////////////////////////////// */
+
+.header-content{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+
+.header-content h1{
+    color: aliceblue;
+    
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+}
+.header-content p{
+    color: aliceblue;
+    
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+.header-content a{
+  /* margin-left: 50rem; */
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* ################################################# showcase styling ################################################### */
+
+.showcase{
+    background: #d3d2d2;
+    /* border: 1px solid rebeccapurple; */
+    padding: 10rem 0;
+}
+.content{
+    /* border: 2px solid green; */
+   
+    background: white;
+    height: 350px;
+    box-shadow: 0px 0px 50px -30px;
+}
+
+.content .image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.content .details{
+    float: right;
+    width: 50%;
+    padding: 3em 2em;
+    text-transform: uppercase;
+}
+.content .details h1{
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1em;
+    color: #3f3f3f;
+}
+.content .details p{
+    font-size: 160%;
+    letter-spacing: 0.3rem;
+    line-height: 2.5rem;
+    color: #7e7e7e;
+}
+.details a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 2px solid red;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: red;
+    margin-top:2em ;
+}
+/* ################################################# showcase styling 2 ################################################### */
+.content2{
+    /* border: 2px solid green; */
+   
+    background: white;
+    height: 350px;
+    margin-top: 10rem;
+    box-shadow: 0px 0px 50px -30px;
+}
+
+.content2 .image2 {
+    float: right;
+    width: 50%;
+    height: 100%;
+    
+}
+.content2 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.content2 .details2{
+    float: left;
+    width: 50%;
+    padding: 3em 2em;
+    text-transform: uppercase;
+}
+.content2 .details2 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1em;
+    color: #3f3f3f;
+}
+.content2 .details2 p{
+    font-size: 160%;
+    letter-spacing: 0.3rem;
+    line-height: 2.5rem;
+    color: #7e7e7e;
+}
+.details2 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 2px solid red;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: red;
+    margin-top:2em ;
+}
+/* ################################################### Feature Section styling ################################################ */
+
+.featurs{
+    /* border: 2px solid red; */
+    padding: 10rem 0;
+}
+.fet-box{
+    /* border: 1px solid green; */
+    
+}
+.fet-box .box{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    padding: 2rem 1rem;
+    /* border: 3px solid blue; */
+}
+.fet-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box h1{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+
+}
+.box p{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.5em;
+}
+.fet-box .box1 ,.box3{
+    background: #1f1f1f;
+    color: #d3d2d2;
+}
+.fet-box .box2{
+    background-image: linear-gradient(to top, #e5347b 0%, #ff4949 100%);
+    color:#d3d2d2;
+}
+.fet-box .box span{
+    font-weight: 400;
+    font-size: 3em;
+    margin-bottom:0.6rem ;
+}
+.box1 span, .box3 span{
+    color: #FF0066;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Fotter Styling ############################################### */
+
+.footer{
+    /* border: 2px solid gold; */
+    background: #3f3f3f;
+    color: #d3d2d2;
+    text-align: center;
+    padding: 2rem 0;
+}
+.footer .footer-icons{
+    margin-bottom: 1rem ;
+    display: block;
+    
+}
+.footer .footer-icons img{
+    width: 3.5rem;
+    margin: 0 1rem;
+}
+.footer p{
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+}
+
+/* //////////////////////////////////////////////////////// About page Css ////////////////////////////////////////////////////////// */
+
+
+.about-nav{
+    background: #1f1f1f;
+}
+.about-info{
+    /* border: 5px solid rgb(255, 0, 0); */
+}
+.about-info2{
+    /* border: 3px solid green; */
+    margin: 2rem 0;
+}
+.about-info2 .head-pera h1{
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    border-bottom:  5px solid  #FF0066;
+}
+.about-info2 .head-pera p{
+    margin-top: 1rem;
+    font-size: 1.5em;
+    color: #3f3f3f;
+}
+.about-info2 .list1{
+    float: left;
+    width: 50%;
+    
+}
+.about-info2 .list2{
+    float: right;
+    width: 50%;
+}
+.list1, .list2{
+    text-align: center;
+    /* border: 3px solid fuchsia; */
+    margin-top: 1rem;
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-info2 li{
+    list-style: none;
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+.about-info2 li::before{
+    content: "\2713";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: #FF0066;
+}
+
+.about-details{
+    /* border: #FF0066 solid 5px; */
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-details::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-details .d1{
+    float: left;
+    width: 25%;
+    
+}
+.about-details .d2{
+    float: left;
+    width: 25%;
+}
+.about-details .d3{
+    float: left;
+    width: 25%;
+}
+.about-details .d4{
+    float: left;
+    width: 25%;
+}
+.about-details h1{
+    font-size: 2.5rem;
+    color: #ff0066;
+}
+.about-details p{
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.about-footer{
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin-top: 2rem;
+    
+    background-image: linear-gradient(to top, #e5347b 0%, #ff4949 100%);
+}
+.about-footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-footer .f-heading{
+    float: left;
+    width: 60%;
+
+}
+.about-footer .f-button{
+    
+    float: right;
+    width: 40%;
+   text-align: right;
+   overflow: hidden;
+   
+    
+}
+.f-heading p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+    color: #ffffff;
+    margin-left: 1rem;
+    
+}
+
+.f-button a{
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+   
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    padding: 0.3em 2.5em;
+    margin: 1rem ;
+
+}
+
+/* ???????????????????????????????? Contact page Styling ????????????????????????? */
+
+
+.contact-con{
+    
+   
+}
+.contact-con::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact-con .cont1, .cont2{
+    /* border: 2px solid green; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+    background: #ffffff;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.cont1{
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+.cont2{
+    width: 49%;
+    float: right;
+    height: 100%;
+}
+.cont1 h1{
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.cont1 p{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.cont1 .con-img{
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cont1 .con-img img{
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+.cont2 h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    border-bottom: 5px solid #ff0066;
+    padding-bottom: 1rem;
+}
+.cont2 p{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.cont2 form input{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    /* margin-top: 1rem; */
+}
+.cont2 form label{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.cont2 form label::after{
+    content: "*";
+    color: #ff0000;
+    margin-left: 0.2rem;
+}
+.cont2 textarea{
+    width: 100%;
+    height: 224px;
+    padding: 1rem;
+}
+.cont2 input[type="submit"]{
+    width: 15rem;
+    border: none;
+    background: #ff0066;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* ////////////////////////// Responsive desing Css ?????????????????????????????????? */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    nav h1{
+        float: none;
+        text-align: center;
+    }
+    nav ul{
+        float: none;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    nav ul li{
+        display: inline;
+
+    }
+    .header-content {
+        max-width: 100%;
+        width: 90%;
+       
+        padding: 0;
+    }
+
+    /*................... showcase styling */
+    .showcase{
+        padding: 5rem 0;
+    }
+    .content{
+        height: 100%;
+    }
+    .content .image{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .content .details{
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 1em 2em;
+        text-align: center;
+    }
+    .content .details h1{
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .content .details a{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .content2{
+        height: 100%;
+        margin-top: 5rem;
+
+    }
+    .content2 .image2{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .content2 .details2{
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 1em 2em;
+        text-align: center;
+    }
+    .content2 .details2 h1{
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .content2 .details2 a{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+/*.......................... Features sTyling ........................... */
+
+.featurs{
+    padding: 5rem 0;
+}
+.fet-box .box {
+    float: none;
+    width: 100%;
+}
+
+
+/* ..................... About section Styling */
+
+.about-footer .f-heading{
+    float: none;
+    width: 100%;
+    
+
+}
+.about-footer .f-heading p{
+    text-align: center;
+    padding-top: 1rem;
+    margin-left: 0;
+}
+.about-footer .f-button{
+    float: none;
+    width: 100%;
+    text-align: center;
+    
+}
+.about-footer .f-button a{
+    font-size: 2rem;
+    border: 3px solid #ffffff;
+    padding: 0.3em 1em;
+}
+
+
+
+/* contact page Styling.................................... */
+
+
+.cont1 ,.cont2{
+    float: none;
+    width: 100%;
+}
+
+
+
+}
+
+@media(min-width:501px) and (max-width:768px){
+
+     /*................... showcase styling */
+     .showcase{
+        padding: 5rem 0;
+    }
+    .content{
+        height: 100%;
+    }
+    .content .image{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .content .details{
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 1em 2em;
+        text-align: center;
+    }
+    .content .details h1{
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .content .details a{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .content2{
+        height: 100%;
+        margin-top: 5rem;
+
+    }
+    .content2 .image2{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .content2 .details2{
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 1em 2em;
+        text-align: center;
+    }
+    .content2 .details2 h1{
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .content2 .details2 a{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+/*.......................... Features sTyling ........................... */
+
+.featurs{
+    padding: 5rem 0;
+}
+.fet-box .box {
+    float: none;
+    width: 100%;
+}
+
+/* ..................... About section Styling */
+
+.about-footer .f-heading{
+   
+    width: 50%;
+    
+
+}
+.about-footer .f-heading p{
+   
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 0   ;
+}
+.about-footer .f-button{
+   
+    width: 50%;
+    text-align: right;
+    
+}
+.about-footer .f-button a{
+    font-size: 2rem;
+    border: 3px solid #ffffff;
+    padding: 0.3em 1em;
+}
+
+
+/* contact page Styling.................................... */
+
+
+.cont1 ,.cont2{
+    float: none;
+    width: 100%;
+}
+
+
+}
+
+@media(min-width:769px) and (max-width:1024px){
+         /*................... showcase styling */
+         .showcase{
+            padding: 5rem 0;
+        }
+        .content{
+            height: 100%;
+        }
+        .content .image{
+            float: none;
+            width: 100%;
+            height: 50%;
+        }
+    
+        .content .details{
+            float: none;
+            width: 100%;
+            height: 50%;
+            padding: 1em 2em;
+            text-align: center;
+        }
+        .content .details h1{
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        .content .details a{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .content2{
+            height: 100%;
+            margin-top: 5rem;
+    
+        }
+        .content2 .image2{
+            float: none;
+            width: 100%;
+            height: 50%;
+        }
+    
+        .content2 .details2{
+            float: none;
+            width: 100%;
+            height: 50%;
+            padding: 1em 2em;
+            text-align: center;
+        }
+        .content2 .details2 h1{
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        .content2 .details2 a{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    
+    /*.......................... Features sTyling ........................... */
+    
+    .featurs{
+        padding: 5rem 0;
+    }
+    .fet-box .box {
+        float: none;
+        width: 100%;
+    }
+    
+    /* ..................... About section Styling */
+    
+    .about-footer .f-heading{
+       
+        width: 50%;
+        
+    
+    }
+    .about-footer .f-heading p{
+       
+        padding-top: 1rem;
+        margin-left: 1rem;
+        margin-top: 0   ;
+    }
+    .about-footer .f-button{
+       
+        width: 50%;
+        text-align: right;
+        
+    }
+    .about-footer .f-button a{
+        font-size: 2rem;
+        border: 3px solid #ffffff;
+        padding: 0.3em 2em;
+    }
+    
+    
+    /* contact page Styling.................................... */
+    
+    
+    .cont1 ,.cont2{
+        float: none;
+        width: 100%;
+    }
+    
+}
+@media(min-width:1025px) and (max-width:1224px){
+    .content .details {
+        padding: 2rem 2rem;
+    }
+    .content .details h1{
+        margin-bottom: 2rem;
+    }
+    .details a{
+       margin-top: 2rem;
+    }
+
+    .content2 .details2 {
+        padding: 2rem 2rem;
+    }
+    .content2 .details2 h1{
+        margin-bottom: 2rem;
+    }
+    .details2 a{
+       margin-top: 2rem;
+    }
+/* about css .................................................. */
+
+    .about-footer .f-heading{
+       
+        width: 50%;
+        
+    
+    }
+    .about-footer .f-heading p{
+       
+        padding-top: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .about-footer .f-button{
+       
+        width: 50%;
+        text-align: right;
+        
+    }
+    .about-footer .f-button a{
+        font-size: 2.5rem;
+        border: 5px solid #ffffff;
+        padding: 0.3em 2em;
+    }
+
+    /* contact page css ............................................... */
+    
+    .cont1 {
+       
+        height: 576px;
+       
+    }
+}
